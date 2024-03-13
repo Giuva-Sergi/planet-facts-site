@@ -10,7 +10,6 @@ Welcome to the Planetary Explorer App! This application provides information abo
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -41,4 +40,5 @@ npm install
 * CSS Modules
 * Other dependencies (check package.json for a full list)
 
+## Contributing
 Contributions are welcome! If you find a bug, have a feature request, or want to contribute in any other way, please open an issue or submit a pull request.
