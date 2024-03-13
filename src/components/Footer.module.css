@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+  margin-block: 5rem 3.5rem;
+}
+
+.planetInfo {
+  width: 100%;
+  border: 1px solid var(--neutral-clr-500);
+  padding-block: 1rem;
+  padding-inline: 1rem 3rem;
+}
+
+.planetInfo h4 {
+  font-family: var(--ff-spartan);
+  font-size: 0.7rem;
+  font-weight: var(--fw-spartan-bold);
+  color: var(--neutral-clr-500);
+  text-transform: uppercase;
+}
+
+.planetInfo h2 {
+  font-family: var(--ff-antonio);
+  font-size: 2.5rem;
+  font-weight: var(--fw-antonio-medium);
+  color: var(--neutral-clr-100);
+}
+
+@media (max-width: 900px) {
+  .footer {
+    gap: 1rem;
+  }
+
+  .planetInfo {
+    padding-inline: 1rem;
+  }
+
+  .planetInfo h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    margin-block: 0 2.5rem;
+    flex-direction: column;
+  }
+
+  .planetInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

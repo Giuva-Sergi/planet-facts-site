@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap");
+
+:root {
+  --neutral-clr-100: #ffffff;
+  --neutral-clr-500: #838391;
+  --neutral-clr-600: #38384f;
+  --neutral-clr-800: #070724;
+
+  --primary-clr-earth: #6f2ed6;
+  --primary-clr-neptune: #2d68f0;
+  --primary-clr-mercury: #419ebb;
+  --primary-clr-venus: #eda249;
+  --primary-clr-mars: #d14c32;
+  --primary-clr-jupiter: #d83a34;
+  --primary-clr-saturn: #cd5120;
+  --primary-clr-uranus: #1ec2a4;
+
+  --ff-antonio: "Antonio", sans-serif;
+  --fw-antonio: 500;
+  --ff-spartan: "League Spartan", sans-serif;
+  --fw-spartan-regular: 400;
+  --fw-spartan-bold: 700;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-image: url("./assets/background-stars.svg");
+  background-color: var(--neutral-clr-800);
+  background-size: cover;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  max-width: 1440px;
+  width: 95%;
+  margin-inline: auto;
+}
+
+.inner-container {
+  max-width: 1110px;
+  width: 80%;
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  .container,
+  .inner-container {
+    width: 90%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .hidden {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

@@ -1,0 +1,69 @@
+.main {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.planetContainer {
+  flex-basis: 21.875rem;
+  font-family: var(--ff-spartan);
+  display: grid;
+  align-items: end;
+  gap: 1.5rem;
+}
+
+.planetName {
+  font-family: var(--ff-antonio);
+  font-size: 5rem;
+  font-weight: var(--fw-antonio);
+  color: var(--neutral-clr-100);
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 0.875rem;
+  font-weight: var(--fw-spartan-regular);
+  color: var(--neutral-clr-100);
+}
+
+.wikipediaContainer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--neutral-clr-500);
+  margin-block: 1rem 0;
+}
+
+.wikipediaLink {
+  font-weight: var(--fw-spartan-bold);
+  color: var(--neutral-clr-500);
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    /* gap: 2rem; */
+  }
+
+  .planetContainer {
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin-top: 0;
+  }
+
+  .planetContainer {
+    grid-template-columns: unset;
+    text-align: center;
+  }
+
+  .wikipediaContainer {
+    justify-content: center;
+    margin-block: 2rem;
+  }
+}

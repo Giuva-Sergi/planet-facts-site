@@ -1,0 +1,160 @@
+.linksContainer {
+  display: grid;
+  gap: 1rem;
+}
+
+.detailsLink {
+  width: 100%;
+  border: 1px solid var(--neutral-clr-600);
+  padding: 1rem 1.5rem;
+  font-weight: var(--fw-spartan-bold);
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--neutral-clr-100);
+  display: flex;
+  gap: 1rem;
+}
+
+.detailsLink span {
+  color: var(--neutral-clr-500);
+}
+
+.secondaryLink {
+  transition: all 350ms ease-in-out;
+}
+
+.secondaryLink:hover {
+  background-color: var(--neutral-clr-600);
+}
+
+.mercury.secondaryLink:focus {
+  background-color: var(--primary-clr-mercury);
+}
+
+.venus.secondaryLink:focus {
+  background-color: var(--primary-clr-venus);
+}
+
+.earth.secondaryLink:focus {
+  background-color: var(--primary-clr-earth);
+}
+
+.mars.secondaryLink:focus {
+  background-color: var(--primary-clr-mars);
+}
+
+.saturn.secondaryLink:focus {
+  background-color: var(--primary-clr-saturn);
+}
+
+.jupiter.secondaryLink:focus {
+  background-color: var(--primary-clr-jupiter);
+}
+
+.uranus.secondaryLink:focus {
+  background-color: var(--primary-clr-uranus);
+}
+
+.neptune.secondaryLink:focus {
+  background-color: var(--primary-clr-neptune);
+}
+
+@media (max-width: 600px) {
+  .linksContainer {
+    display: none;
+    border-bottom: 1px solid var(--neutral-clr-500);
+  }
+
+  .detailsLink {
+    display: grid;
+    place-content: center;
+    border: none;
+    color: var(--neutral-clr-500);
+    font-family: var(--ff-spartan);
+    letter-spacing: 1.93px;
+    padding: 0;
+    padding-block: 1.5rem;
+  }
+
+  .detailsLink span {
+    display: none;
+  }
+
+  .mercury.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .venus.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .earth.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .mars.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .saturn.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .jupiter.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .uranus.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .neptune.secondaryLink:focus {
+    background-color: transparent;
+  }
+
+  .secondaryLink {
+    position: relative;
+  }
+
+  .secondaryLink:focus::before {
+    position: absolute;
+    inset: 100% 0 0 0;
+    transform: translateY(-50%);
+    content: "";
+    width: 100%;
+    height: 3px;
+  }
+
+  .mercury.secondaryLink:focus::before {
+    background-color: var(--primary-clr-mercury);
+  }
+
+  .venus.secondaryLink:focus::before {
+    background-color: var(--primary-clr-venus);
+  }
+
+  .earth.secondaryLink:focus::before {
+    background-color: var(--primary-clr-earth);
+  }
+
+  .mars.secondaryLink:focus::before {
+    background-color: var(--primary-clr-mars);
+  }
+
+  .jupiter.secondaryLink:focus::before {
+    background-color: var(--primary-clr-jupiter);
+  }
+
+  .saturn.secondaryLink:focus::before {
+    background-color: var(--primary-clr-saturn);
+  }
+
+  .uranus.secondaryLink:focus::before {
+    background-color: var(--primary-clr-uranus);
+  }
+
+  .neptune.secondaryLink:focus::before {
+    background-color: var(--primary-clr-neptune);
+  }
+}

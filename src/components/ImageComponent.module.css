@@ -1,0 +1,29 @@
+.imgContainer {
+  width: 70%;
+  display: grid;
+  position: relative;
+}
+
+.imgContainer img {
+  aspect-ratio: 1;
+  place-self: center;
+}
+
+.geologyImg {
+  position: absolute;
+  width: 10rem;
+  height: 12rem;
+  top: 65%;
+}
+
+@media (max-width: 600px) {
+  .imgContainer {
+    margin-top: 5rem;
+  }
+
+  .geologyImg {
+    top: 50%;
+    width: 8rem;
+    height: 10rem;
+  }
+}
